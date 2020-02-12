@@ -1,7 +1,8 @@
 
-
+# 声明 CMake 版本
 cmake_minimum_required(VERSION 3.4.1)
 
+# 添加库
 add_library( # Sets the name of the library.
         native-lib
 
@@ -20,6 +21,7 @@ find_library(
 
         log)
 
+# 链接库
 target_link_libraries(
         native-lib
 
